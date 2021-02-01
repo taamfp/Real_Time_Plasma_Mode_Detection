@@ -19,8 +19,8 @@ data_path = 'file'
 data = platform.readsav(data_path)
 
 
-magnetic_field = data['i803']
-time = data['t_i803']
+magnetic_field = data['data']
+time = data['t']
 
 # Vector
 
@@ -46,7 +46,6 @@ plt.rcParams.update({'font.size': 15})
 
 
 plt.plot(time, magnetic_field)
-plt.title('JET #86469')
 plt.xlabel('time (s)')
 plt.ylabel('M')
 plt.show()
